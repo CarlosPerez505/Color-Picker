@@ -3,6 +3,7 @@ window.onload = function(){
 };
 
 function initColorPicker(){
+
     let colorBox = document.getElementById('colorBox')
     let rgb = {
         red: document.getElementById("red"),
