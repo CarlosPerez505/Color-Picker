@@ -9,14 +9,14 @@ function initColorPicker(){
         red: document.getElementById("red"),
         green: document.getElementById("green"),
         blue: document.getElementById("blue"),
-    };
+    };sssss
     setColorPickerEventListeners(colorBox, rgb);
 }
 
 function setColorPickerEventListeners (colorBox, rgb) {
     rgb.red.addEventListener('change', () => {
         console.log("Red value: ", rgb.red.value);
-        setBoxBGColor(colorBox,rgb.red.value, rgb.green.value, rgb.blue.value);
+        setBoxBGColor(colorBox, 150, 150, 150);
     });
     rgb.green.addEventListener('change', () => {
         console.log("Green value: ", rgb.green.value);
