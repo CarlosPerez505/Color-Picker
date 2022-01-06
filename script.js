@@ -9,7 +9,7 @@ function initColorPicker(){
         red: document.getElementById("red"),
         green: document.getElementById("green"),
         blue: document.getElementById("blue"),
-    };sssss
+    };
     setColorPickerEventListeners(colorBox, rgb);
 }
 
