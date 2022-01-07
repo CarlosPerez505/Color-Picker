@@ -24,6 +24,7 @@ function setColorPickerEventListeners (colorBox, rgb, pickerElements) {
         let blue= rgb.blue.value;
 
             setBoxBGColor(colorBox, red, green, blue);
+            setDisplayValues(red, green, blue);
         });
     }
 }
@@ -40,5 +41,5 @@ function setDisplayValues(red, green, blue) {
 
     redVal.innerText = red;
     greenVal.innerText = green;
-    blueVal.innerText = blue;
+    blueVal.innerText = blue;s
 }
