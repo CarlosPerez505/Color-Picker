@@ -16,7 +16,7 @@ function initColorPicker(){
 
 function setColorPickerEventListeners (colorBox, rgb) {
 
-    for (let i = 0; i < pickerElements.length, i++) {
+    for (let i = 0; i < pickerElements.length; i++) {
         pickerElements[i] addEventListener("change", () => {
     });
 
