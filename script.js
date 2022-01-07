@@ -32,23 +32,13 @@ function setBoxBGColor (colorBox, red, green, blue) {
     rgbVal = [red, green, blue].join(',');
     colorBox.style.backgroundColor = "rgb(" + rgbVal + ")";
 }
-   /*rgb.red.addEventListener('change', () => {
-        console.log("Red value: ", rgb.red.value);
-        setBoxBGColor(colorBox, rgb.red.value, rgb.green.value, rgb.blue.value);
-    });
-    rgb.green.addEventListener('change', () => {
-        console.log("Green value: ", rgb.green.value);
-        setBoxBGColor(colorBox, rgb.red.value, rgb.green.value, rgb.blue.value);
-    });
-    rgb.blue.addEventListener('change', () => {
-        console.log("Blue value: ", rgb.blue.value);
-        setBoxBGColor(colorBox, rgb.red.value, rgb.green.value, rgb.blue.value);
-    });
 
-}
+function setDisplayValues(red, green, blue) {
+    let redVal = document.getElementById("redVal");
+    let greenVal = document.getElementById("greenVal");
+    let blueVal = document.getElementsByClassName("blueVal")
 
-function setBoxBGColor (colorBox, red, green, blue) {
-    rgbVal = [red, green, blue].join(',');
-    colorBox.style.backgroundColor = "rgb(" + rgbVal + ")";
+    redVal.innerText = red;
+    greenVal.innerText = green;
+    blueVal.innerText = blue;
 }
-*/
