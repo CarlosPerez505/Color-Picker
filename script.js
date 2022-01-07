@@ -15,6 +15,7 @@ function initColorPicker(){
 }
 
 function setColorPickerEventListeners (colorBox, rgb, pickerElements) {
+    let pickerLen = pickerElements.length;
     for (let i= 0; i<pickerElements.length; i++) {
         console.log("Red value: ", rgb.red.value)
         let red= rgb.red.value;
