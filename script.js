@@ -11,13 +11,13 @@ function initColorPicker(){
         blue: document.getElementById("blue"),
     };
     let colorPickers = documeny.getElementsByClassName("picker")
-    setColorPickerEventListeners(colorBox, rgb);
+    setColorPickerEventListeners(colorBox, rgb, colorPickers);
 }
 
 function setColorPickerEventListeners (colorBox, rgb) {
 
     for (let i = 0; i < pickerElements.length, i++) {
-        pickerElements[i]addEventListener("change", () => {
+        pickerElements[i] addEventListener("change", () => {
     });
 
    /*rgb.red.addEventListener('change', () => {
