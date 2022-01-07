@@ -17,11 +17,12 @@ function initColorPicker(){
 function setColorPickerEventListeners (colorBox, rgb, pickerElements) {
     let pickerLen = pickerElements.length;
     for (let i= 0; i<pickerLen; i++) {
+        pickerElements[i].addEventListener('change', () => {
         console.log("Red value: ", rgb.red.value)
         let red= rgb.red.value;
         let green= rgb.green.value;
         let blue= rgb.blue.value;
-        pickerElements[i].addEventListener('change', () => {
+
             setBoxBGColor(colorBox, red, green, blue);
         });
     }
