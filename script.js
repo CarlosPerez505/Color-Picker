@@ -23,7 +23,7 @@ function setColorPickerEventListeners (element, colors, pickerElements) {
         let green= colors.green.value;
         let blue= colors.blue.value;
 
-            setColorPickerEventListeners(element, red, green, blue);
+            setElementBGColor(element, red, green, blue);
             setDisplayValues(red, green, blue);
         });
     }
